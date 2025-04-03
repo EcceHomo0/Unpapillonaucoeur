@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Quattrocento:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Waterfall&display=swap');
+
+
+body
+{
+    background-image: url('../medias/images/pique-nique.jpg');
+    background-size:cover;
+    font-family: 'Quattrocento';
+}
+
+nav
+{
+    ul
+    {
+        a:nth-child(4)
+        {
+            li
+            {
+                color:yellow;
+            }
+            
+        }
+    }
+}
+
+main
+{
+    section
+    {
+        background-color: rgba(107,9,13,0.9);
+        border-radius:2vw;
+        border: solid 2px gold;
+        margin: 2vh auto;
+        div:nth-child(1)
+        {
+            h1
+            {
+                text-align:center;
+                color:yellow;
+                font-size:3vh;
+            }
+        } 
+    }
+    section:nth-child(1)
+    {
+        article:nth-child(2)
+        {
+            display:flex;
+            justify-content: center;
+            img
+            {
+                height:60vh;
+                margin:1vw;
+            }
+        }
+        article:nth-child(3)
+        {
+            background-color: rgba(59, 14, 31,0.9);
+            border: solid 1px gold;
+            display:flex;
+            justify-content: space-around;
+            align-items:center;
+            margin:1vw;
+            padding:1vw;
+            border-radius:2vw;
+            p
+            {
+                color:yellow;
+            }
+        }
+    }
+    section:nth-child(2)
+    {
+        article
+        {
+            display:flex;
+            justify-content:center;
+            img
+            {
+                height:60vh;
+                margin:1vw;
+            }
+        }
+        p
+        {
+            text-align: center;
+            color:yellow;
+            font-family: 'Crimson Text';
+            font-size:2.5vh;
+        }
+        a
+        {
+            text-decoration:none;
+            color:white;
+        }
+    }
+}
+
+
+
+
+/********************************** Responsive Design ***********************************************/
+
+@media screen and (max-width:800px)
+{
+    main
+    {
+        section:nth-child(1)
+        {
+            article:nth-child(2), article:nth-child(3)
+            {
+                flex-direction: column;
+                img
+                {
+                    margin:1vh auto;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width:500px)
+{
+    main
+    {
+        section:nth-child(1)
+        {
+            article:nth-child(2)
+            {
+                img
+                {
+                    height:40vh;
+                }
+            }
+        }
+        section:nth-child(2)
+        {
+            article
+            {
+                img
+                {
+                    height: 40vh;
+                }
+            }
+            p
+            {
+                font-size:1.5vh;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    main
+    {
+        section
+        {
+            div:nth-child(1)
+            {
+                h1
+                {
+                    font-size:2vh;
+                }
+            }
+            article
+            {
+                p
+                {
+                    font-size:1.5vh;
+                }
+                audio
+                {
+                    width:80vw;
+                }
+            }
+        }
+    }
+}

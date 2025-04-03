@@ -1,0 +1,56 @@
+body
+{
+    background-image: url('../medias/images/pigeon_voyageur.png');
+    background-position: left;
+    background-size:cover;
+}
+
+main
+{
+    font-family: 'Crimson Text';
+    section
+    {
+        background-color: rgb(173, 12, 20,0.9);
+        border: solid 2px gold;
+        border-radius:2vw;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        height:52vh;
+        text-align: center;
+        h2
+        {
+            font-size:3.5vh;
+            color:yellow;
+            margin:1vw;
+            font-weight: bold;
+        }
+        a
+        {
+            display: flex;
+            text-decoration:none;
+            svg
+            {
+                height:7vh;
+            }
+            p
+            {
+                color:white;
+                font-size: 2.5vh;
+                font-weight: bold;
+                margin:auto auto;
+            }
+        }
+    }
+}
+
+/******************************************** Responsive ********************************************/
+
+@media screen and (max-width:750px)
+{
+    body
+    {
+        background-position: right;
+    }
+}

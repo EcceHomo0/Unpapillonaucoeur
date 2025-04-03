@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Quattrocento:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Waterfall&display=swap&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap');
+
+header
+{
+    display: flex;
+    justify-content: space-around;
+    align-items:center;
+    background-color: #F9E9AB;
+    background-position: 0% 30%;
+    background-size:cover;
+    opacity:0.9;
+    border: solid 2px gold;
+    border-radius:1vw;
+    img
+    {
+        height:20vh;
+    }
+    h1
+    {
+        font-family: 'Waterfall';
+        font-weight:normal;
+        font-size:10vw;
+        margin:0;
+        color:red;
+    }
+    #IconeBurger
+    {
+        visibility:hidden;
+        width:10vw;
+    }
+    #LiensBurger
+    {
+        display:none;
+        background-color: rgba(0,0,0,1);
+        position:absolute;
+        top:2vh;
+        right:2vw;
+        width:20vw;
+        border-radius:1vw;
+        ul
+        {
+            padding:1vw;
+            list-style-type: none;
+            a
+            {
+                text-decoration: none;
+                color:white;
+                margin:1vw;
+            }
+        }
+        #croixBurger
+        {
+            color:white;
+            width:3vw;
+            position:absolute;
+            top:2vh;
+            right:2vw;
+            cursor:pointer;
+        }
+    }
+}
+
+nav
+{
+    background-color: #FC9E5A;
+    height:8vh;
+    border: solid 2px red;
+    margin: 1vh 0;
+    opacity:0.9;
+    border-radius:1vw;
+    ul
+    {
+        list-style-type: none;
+        display:flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin-top:0;
+        margin-bottom: 0;
+        padding: 2vh;
+        a
+        {
+            text-decoration: none;
+        }   
+        li
+        {
+            text-decoration: none;
+            color:black;
+            font-family: 'Tajawal';
+            font-size: 3vh;
+        }   
+        li:hover
+        {
+            color:white;
+            cursor: pointer;
+        }  
+    }
+}
+
+/******************************* Responsive design *********************************************/
+
+
+@media screen and (max-width:900px)
+{
+    header
+    {
+        margin-bottom: 1vh;
+        img
+        {
+            height:12vw;
+        }
+        #IconeBurger
+        {
+            visibility:visible;
+        }
+        #LiensBurger.open
+        {
+            display:block;
+        }
+    }
+    nav
+    {
+        display:none;
+    }
+}
+
+@media screen and (max-width:530px)
+{
+    header
+    {
+        #LiensBurger
+        {
+            width:30vw;
+            font-size:1.5vh;
+        }
+    }
+}

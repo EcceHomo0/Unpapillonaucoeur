@@ -1,0 +1,235 @@
+body
+{
+    background-image: url('../medias/images/contact.jpg');
+    background-size:cover;
+}
+
+nav
+{
+    ul
+    {
+        a:nth-child(6)
+        {
+            li
+            {
+                color:yellow;
+            }
+            
+        }
+    }
+}
+
+main
+{
+    display:flex;
+    justify-content:space-around;
+    font-family: 'Crimson Text';
+    font-size: 2vh;
+    section
+    {
+        background-color: rgba(107,9,13,0.9);
+        color:yellow;
+        border:solid 2px gold;
+        padding: 1vw;
+        border-radius:2vw;
+    }
+    section:nth-child(1)
+    {
+        width:55vw;
+        form
+        {
+            div
+            {
+                margin: 2vw;
+                display: flex;
+                justify-content: center;
+            }
+            div:nth-child(3)
+            {
+                select
+                {
+                    option:nth-child(1)
+                    {
+                        width:10vw;
+                    }
+                }
+            }
+            div:nth-child(-n+2)
+            {
+                display:flex;
+                justify-content: space-around;
+                input
+                {
+                    margin-left:1vh;
+                    border-radius: 10px;
+                    height:2vh;
+                    background-color:lightyellow;
+                    border:solid 1px gold;
+                }
+            }
+            div:nth-child(5)
+            {
+                flex-direction: column;
+                div
+                {
+                    margin:0;
+                }
+                div:nth-child(-n+2)
+                {
+                    display:flex;
+                    justify-content: center;
+                }
+                #images
+                {
+                    display:grid;
+                    grid-template-columns: repeat(4,1fr);
+                    grid-template-rows: 1fr;
+                    img
+                    {
+                        height:10vh;
+                    }
+                }
+            }
+            select
+                {
+                    margin-left:1vh;
+                    border-radius: 10px;
+                    height:2.5vh;
+                    background-color:lightyellow;
+                    border:solid 1px gold;
+                }
+            textarea
+            {
+                height:20vh;
+                width:80%;
+                resize:none;
+                border-radius: 10px;
+                background-color:lightyellow;
+                border:solid 1px gold;
+            }
+            button
+            {
+                display:flex;
+                justify-self: center;
+                border-radius: 10px;
+                background-color:lightyellow;
+                border:solid 1px gold;
+            }
+        }
+    }
+    section:nth-child(2)
+    {
+        width:35vw;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        div
+        {
+            text-align:center;
+            margin:1vh 0;
+        }
+        div:nth-child(1)
+        {
+            margin-bottom:15vh;
+        }
+    }
+    h1,h2
+    {
+        text-align:center;
+        color:rgb(222, 222, 255);
+    }
+    p
+    {
+        margin: 2vw;
+    }
+}
+
+/******************************* Responsive design *********************************************/
+
+
+@media screen and (max-width:1500px)
+{
+    main
+    {
+       flex-direction:column;
+       align-items: center;
+       section:nth-child(1)
+       {
+            width:90vw;
+            margin-bottom: 2vh;
+       }
+       section:nth-child(2)
+       {
+            width:90vw;
+       }
+    }
+}
+
+@media screen and (max-width:900px)
+{
+    main
+    {
+        section
+        {
+            form
+            {
+                input, select
+                {
+                    max-width: 80%;
+                }
+                button
+                {
+                    max-width: 20%;
+                }
+                div
+                {
+                    display:flex;
+                    flex-direction: column;
+                    align-items: center;
+                    div
+                    {
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    main
+    {
+        section:nth-child(1)
+        {
+            form
+            {
+                div:nth-child(5)
+                {
+                    #images
+                    {
+                        grid-template-columns: 1fr 1fr;
+                        grid-template-rows: 1fr 1fr;
+                        img
+                        {
+                            height:7vh;
+                        }
+                    }
+                }
+                button
+                {
+                    max-width:60%;
+                }
+            }
+        }
+
+        section:nth-child(2)
+        {
+            div:nth-child(1)
+            {
+                margin-bottom:5vh;
+            }
+        }
+
+    }
+}

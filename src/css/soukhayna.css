@@ -1,0 +1,102 @@
+body
+{
+    background-image: url('../medias/images/soukhayna.jpg');
+    background-size:cover;
+    font-family: 'Crimson Text';
+}
+
+nav
+{
+    ul
+    {
+        a:nth-child(2)
+        {
+            li
+            {
+                color:yellow;
+            }
+            
+        }
+    }
+}
+
+main
+{
+    section
+    {
+        background-color: rgb(173, 12, 20,0.9);
+        border: solid 2px gold;
+        border-radius:2vw;
+        img
+        {
+            height:30vh;
+            float:right;
+            margin:1vw;
+            border: solid 1px gold;
+        }
+
+        p
+        {
+            font-size:3vh;
+            color:yellow;
+            margin:1vw;
+        }
+
+    }
+    
+}
+
+
+/********************************** Responsive Design ***********************************************/
+
+@media screen and (max-width:800px)
+{
+    main
+    {
+        section
+        {
+            img
+            {
+                float:initial;
+                display:flex;
+                justify-self: center;
+            }
+        }
+    }   
+}
+
+@media screen and (max-width:700px)
+{
+    main
+    {
+        section
+        {
+            img
+            {
+                height:25vh;
+            }
+            p
+            {
+                font-size: 2vh;
+            }
+        }
+    }    
+}
+
+@media screen and (max-width:400px)
+{
+    main
+    {
+        section
+        {
+            img
+            {
+                height:20vh;
+            }
+            p
+            {
+                font-size: 1.5vh;
+            }
+        }
+    }    
+}

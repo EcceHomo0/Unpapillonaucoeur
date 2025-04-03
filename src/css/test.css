@@ -1,0 +1,11 @@
+article
+{
+    width:40vw;
+    background-color: lightgray;
+    border: solid 2px black;
+    img
+    {
+        height:30vh;
+        float:right;
+    }
+}

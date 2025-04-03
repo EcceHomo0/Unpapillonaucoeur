@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@300;400;500;600;700&family=Quattrocento:wght@400;700&family=Tajawal:wght@200;300;400;500;700;800;900&family=Waterfall&display=swap');
+
+
+body
+{
+    background-image: url('../medias/images/smiley_dommage.jpg');
+    background-size:cover;
+}
+
+main
+{
+    font-family: 'Crimson Text';
+    section
+    {
+        background-color: rgb(173, 12, 20,0.9);
+        border: solid 2px gold;
+        border-radius:2vw;
+        display:flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        height:52vh;
+        div
+        {
+            text-align:center;
+            h2
+            {
+                font-size:3.5vh;
+                color:yellow;
+                margin:1vw;
+                font-weight: bold;
+            }
+        }
+        a
+        {
+            display: flex;
+            text-decoration:none;
+            svg
+            {
+                height:7vh;
+            }
+            p
+            {
+                color:white;
+                font-size: 2.5vh;
+                font-weight: bold;
+                margin:auto auto;
+            }
+        }
+    }
+}
+
+/******************************************** Responsive ********************************************/
+
+@media screen and (max-width:750px)
+{
+    body
+    {
+        background-position: center;
+    }
+    main
+    {
+        section
+        {
+            div
+            {
+                h2
+                {
+                    font-size:2vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:400px)
+{
+    main
+    {
+        section
+        {
+            a
+            {
+                p
+                {
+                    font-size:1.5vh;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,245 @@
+body
+{
+    background-image: url('../medias/images/papillons_orchidees_bleues.jpg');
+    background-size:cover;
+    font-family: 'Quattrocento';
+}
+
+header
+{
+    #LiensBurger
+    {
+        top:2vh;
+        right:1vw;
+    }
+}
+
+nav
+{
+    ul
+    {
+        a:nth-child(1)
+        {
+            li
+            {
+                color:yellow;
+            }
+            
+        }
+    }
+}
+
+main
+{
+    p
+    {
+        margin:0;
+        padding:2vh;
+        line-height: 3vh;
+        font-family: 'Crimson Text';
+    }
+
+
+    /************************************ Maxime **********************************************/
+
+    section:nth-child(1)
+    {
+        display: flex; justify-content: center; align-items:center;
+        p
+        {
+            font-family:'Cormorant Upright';
+            font-size:2.5vw;
+            line-height:6vh;
+        }
+        color:brown;
+        height:20vh;
+        margin: 1vh 0 2vh 0;
+        opacity:0.9;
+        z-index:-1;
+    }
+
+    /**********************************************************************************************/
+
+    section:nth-child(2)
+    {
+        display:flex;
+
+        /* Introduction */
+
+        article:nth-child(1)
+        {
+            background-color: rgb(173, 12, 20,0.9);
+            border: solid 2px gold;
+            border-radius:2vw;
+            font-size:3.5vh;
+            color:yellow;
+            width:36vw;
+            margin-right:2vw;
+            p
+            {
+                line-height:4vh;
+                span
+                {
+                    font-family: 'Waterfall';
+                    font-size: 8vh;
+                }
+            }
+        }
+
+
+        /* Présentation des pages */
+
+        article:nth-child(2)
+        {
+            width:60vw;
+            display:grid;
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1vw;
+            a
+            {
+                text-decoration:none;
+                color:yellow;
+                font-size: 3vh;
+
+                background-color: rgba(107,9,13,0.9);
+                border: solid 2px gold;
+                border-radius:2vw;
+                height:40vh;
+
+                img
+                {
+                    height:20vh;
+                    margin: 1vw;
+                    float:right;
+                    border: solid 1px gold;
+                }
+                p
+                {
+                    span
+                    {
+                        font-weight: bold;
+                        font-size: 3vh;
+                        color:rgb(222, 222, 255);
+                    }
+                }
+            }
+            a:nth-child(2) img, a:nth-child(3) img
+            {
+                height: 15vh;
+            }
+            a:hover
+            {
+                background-color: rgba(107,9,13,1);
+                cursor:pointer;
+            }
+        }
+    }
+}
+
+
+/******************************* Responsive design *********************************************/
+
+
+@media screen and (max-width:1400px)
+{
+    main
+    {
+        section:nth-child(2)
+        {
+            flex-direction: column;
+            article:nth-child(1)
+            {
+                width:initial;
+                margin: 0 0 2vh 0;
+            }
+            article:nth-child(2)
+            {
+                width:initial; 
+            }
+        }
+    }
+}
+
+
+
+@media screen and (max-width:900px)
+{
+    main
+    {
+        section:nth-child(1)
+        {
+            height:15vh;
+            p
+            {
+                line-height: 3vh;
+            }
+        }
+        section:nth-child(2)
+        {
+            article:nth-child(2)
+            {
+                grid-template-rows: repeat(4,1fr);
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px)
+{
+    main
+    {
+        p
+        {
+            line-height:2.5vh;
+        }
+        section:nth-child(1)
+        {
+            height:18vw;
+            p
+            {
+                font-size:3vw;
+                line-height: 2vh;
+            }
+        }
+        section:nth-child(2)
+        {
+            article:nth-child(1)
+            {
+                font-size:2.5vh;
+                p
+                {
+                    line-height:3vh;
+                    span
+                    {
+                        font-size:3.8vh;
+                    }
+                }
+            }
+            article:nth-child(2)
+            {
+                a
+                {
+                    font-size:2vh;
+                    height:30vh;
+                    p
+                    {
+                        span
+                        {
+                            font-size:2vh;
+                        }
+                    }
+                    img
+                    {
+                        height:15vh;
+                    }
+                }
+                a:nth-child(2) img, a:nth-child(3) img
+                {
+                    height: 10vh;
+                }
+            }
+        }
+    }
+}

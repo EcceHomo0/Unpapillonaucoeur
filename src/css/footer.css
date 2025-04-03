@@ -1,0 +1,92 @@
+footer
+{
+    display:flex;
+    justify-content:space-between;
+    background-color:rgba(0,0,0,0.9);
+    color:white;
+    border: solid 1px gold;
+    border-radius:1vw;
+    margin:1vh 0;
+    font-family: 'Tajawal';
+    p
+    {
+        display:flex;
+        margin-left:1vw;
+        align-self: center;
+    }
+    font-size:2vh;
+    section:nth-child(1)
+    {
+        display:flex;
+        a
+        {
+            text-decoration: none;
+            color:white;
+            padding:1.5vh;
+            img
+            {
+                height:7vh;
+                margin: 0 1vw;
+            }
+        }
+        div
+        {
+            display:flex;
+            flex-direction: column;
+            justify-content:center;
+        }
+        div:nth-child(2)
+        {
+            display:flex;
+            flex-direction: row;
+        }
+    }
+    section:nth-child(2)
+    {
+        display:flex;
+        align-self:center;
+        margin-right:1vw;
+    }
+}
+
+
+/******************************************** Responsive ********************************************/
+
+@media screen and (max-width:950px)
+{
+    footer
+    {
+        font-size:1.5vh;
+    }
+}
+
+@media screen and (max-width:800px)
+{
+    footer
+        {
+            flex-direction: column;
+            section:nth-child(1)
+            {
+                flex-direction: column;
+                align-items: center;
+                div:nth-child(2)
+                {
+                    display:flex;
+                    flex-direction: row;
+                }
+                div:nth-child(3)
+                {
+                    display:flex;
+                    align-items:center;
+                }
+            }
+        }
+}
+
+@media screen and (max-width:350px)
+{
+    footer
+    {
+        font-size: 1.3vh;
+    }
+}
