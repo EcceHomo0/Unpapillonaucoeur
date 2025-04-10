@@ -55,7 +55,7 @@
                 </div>
                 <div>
                     <div>
-                        <p>Anti-bot: merci de sélectionner l'image qui représente le mieux le nom du site</p>
+                        <p>Anti-bot: merci de sélectionner l'image qui évoque le mieux le nom du site</p>
                     </div>
                     <div id="images">
                         <div>
