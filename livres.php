@@ -51,7 +51,7 @@
 
         <section>
 
-            <article>
+            <article id="livre 1">
                 <div>
                     <h3>Un papillon au coeur</h3>
                     <img class="img_livre_responsive" src="src/medias/images/unpapillonaucoeur.jpg" alt="Couverture un papillon au cœur">
@@ -73,7 +73,7 @@
                 <img class="img_livre_base" src="src/medias/images/unpapillonaucoeur.jpg" alt="Couverture un papillon au cœur">
             </article>
 
-            <article>
+            <article id="livre 2">
                 <div>
                     <h3>La lumière du papillon</h3>
                     <img class="img_livre_responsive" src="src/medias/images/lalumieredupapillon.jpg" alt="Couverture la lumière du papillon">
@@ -90,7 +90,7 @@
                 <img class="img_livre_base" src="src/medias/images/lalumieredupapillon.jpg" alt="Couverture la lumière du papillon">
             </article>
 
-            <article>
+            <article id="livre 3">
                 <div>
                     <h3>Libère ton inspiration</h3>
                     <img class="img_livre_responsive" src="src/medias/images/libere_ton_inspiration.png" alt="Couverture Libère ton inspiration">
@@ -99,7 +99,7 @@
                 <img class="img_livre_base" src="src/medias/images/libere_ton_inspiration.png" alt="Couverture Libère ton inspiration">
             </article>
 
-            <article>
+            <article id="livre 4">
                 <div>
                     <h3>Espoirs d'amour</h3>
                     <img class="img_livre_responsive" src="src/medias/images/espoirsdamour.jpg" alt="Couverture Espoirs d'amour">
@@ -108,7 +108,7 @@
                 <img class="img_livre_base" src="src/medias/images/espoirsdamour.jpg" alt="Couverture Espoirs d'amour">
             </article>
 
-            <article>
+            <article id="livre 5">
                 <div>
                     <h3>La direction du vent</h3>
                     <img class="img_livre_responsive" src="src/medias/images//ladirectionduvent.jpg" alt="Couverture la direction du vent">
@@ -119,7 +119,7 @@
                 <img class="img_livre_base" src="src/medias/images//ladirectionduvent.jpg" alt="Couverture la direction du vent">
             </article>
 
-            <article>
+            <article id="livre 6">
                 <div>
                     <h3>L'amour du roi et l'elixir magique</h3>
                     <img class="img_livre_responsive" src="src/medias/images/lamour_du_roi_et_lelixir_magique.jpg" alt="Couverture l'amour du roi et l'élixir magique">
